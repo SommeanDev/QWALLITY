@@ -1,0 +1,351 @@
+<style>
+  body {
+    background-color: black;
+    margin: 0px;
+  }
+
+/*  NAVBAR STYLING*/
+
+  .navbar {
+  border-bottom: 1px solid cyan;
+  display: flex;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  text-decoration: none;
+  border: 2px solid black;
+  margin-left: 30px;
+  margin-top: 4px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  flex: 1 0 auto; /* Enable shrinking */
+}
+
+/* Rest of the CSS code... */
+
+
+  .navbar-nav .nav-link:hover {
+    border: 2px solid cyan;
+    border-radius: 10px;
+    color:white;
+  }
+
+/* ABOUT BUTTON STYLING */
+
+.navbar-nav .about-button {
+  color: white; /* Change the text color to red */
+  font-weight: bold; /* Apply bold font weight */
+  margin-left: 30px;
+}
+
+/*SEARCH BOX STYLING*/
+
+.topnav-right input[type="text"] {
+    padding: 6px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    outline: none;
+    width: 250px;
+  }
+
+/*  TOGGLE BUTTON STYLING*/
+
+.custom-toggler.navbar-toggler {
+    border:2px solid white;
+    border-radius: 10px;
+
+   }
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  @media (max-width: 1450px) {
+  .navbar-toggler {
+    margin-left: auto !important;
+  }
+}
+
+
+/*MEDIA QUERY FOR SEARCH BOX*/
+
+@media screen and (max-width: 600px) {
+  .topnav-right a, .topnav-right input[type=text] {
+    float: none;
+    display: block;
+    float: left;
+    width: 200px;
+    height:100%;
+  }
+  
+  .topnav-right input[type=text] {
+    border: 2px solid white;
+
+  }
+}
+
+/*STYLING OF SEARCH BUTTON*/
+
+.fa-search{
+  color:white;
+}
+
+/*STYLING OF SEARCHED IMAGES*/
+
+#image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#image-container img {
+  width: 40%;
+  max-width: 500px;
+  height: auto;
+  margin: 10px;
+  box-sizing: border-box;
+
+}
+
+#image-container .col-lg-6 {
+  margin-bottom: 20px; /* Adjust the margin value as per your preference */
+}
+@media screen and (min-width: 990px) {
+  #image-container img {
+    max-width: 50%;
+    margin-left:40px;
+    margin-right:auto;
+
+  }
+}
+
+/* Additional rules to change width and height of searched Images*/
+
+@media screen and (max-width: 700px) 
+{
+  #image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-left:20px;
+
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 990px) 
+{
+  #image-container img {
+    max-width: 50%;
+    height: auto;
+    margin-left:40px;
+  }
+}
+
+
+/*NAVBAR ELEMENT STYLING*/
+
+.home
+{
+  color:white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  font-family: cursive;
+}
+
+.trending
+{
+  color:white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  font-family: cursive;
+}
+.abstract
+{
+  color:white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  font-family: cursive;
+}
+.minimal{
+  color:white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  font-family: cursive;
+}
+.nature
+{
+  color:white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  font-family: cursive;
+}
+.marvel
+{
+  color:white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  font-family: cursive;
+}
+.anime
+{
+  color:white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  font-family: cursive;
+}
+.about
+{
+  color:white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  font-family: cursive;
+}
+.about-us
+{
+  color:white;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-family: cursive;
+  margin-left: auto;
+  width:500px;
+   margin-right:60px;
+
+}
+.responsive 
+{
+  width: 100%;
+  max-width: 768px;
+  height: auto;
+}
+
+
+/*STYLING FOR IMAGE COLUMNS*/
+
+p 
+{
+  width: 95%;
+  height: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  font-family: Helvetica;
+  float: center;
+  border-radius: 4px;
+  color: white; 
+}
+
+/* Simple Responsive Framework. */
+.row 
+{
+  width: 1300px;
+  margin-top: 50px;
+  float:right;
+}
+.responsive1 
+{
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/*LOADING ANIMATIONS*/
+
+#loading-container 
+{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+.loading-animation 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  animation: fade-in 1s ease forwards;
+}
+
+@keyframes fade-in 
+{
+   0% {
+    opacity: 0;
+  }
+  25%{
+    opacity:0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75%{
+    opacity:0.6;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.loader 
+{
+  width: 70px;
+  height: 70px;
+  margin: 40px auto;
+  animation: spin 0.8s infinite ease-in-out;
+  border: 6px solid cyan;
+  border-top-color: cyan;
+  border-bottom-color: cyan;
+  border-left-color: black;
+  border-right-color: black;
+  border-radius: 50%;
+  background-color: black;
+}
+
+@keyframes spin 
+{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+</style>
